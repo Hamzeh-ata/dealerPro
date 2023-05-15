@@ -1,0 +1,140 @@
+<html>
+<head>
+    <meta content="text/html" ; charset="utf-8">
+    <link href="./products.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto  float-lg-end float-sm-start  float-md-start mb-2 mb-lg-0 ">
+                    <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                        <a class="nav-link" href="#">Stores</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                        <a class="nav-link" href="#">Build gaming computer</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                        <a class="nav-link" href="#">Build store</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start ">
+                        <a href="games.html" class="cmn-btn" style="padding: 1px 18px;">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div id="backgroundWrap" class="backgroundWrap"></div>
+    <div class="productSpecificationsDialog">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100 d-flex  justify-content-center">
+                <div class="col-lg-11 col-md-6 col-sm-12 d-flex align-self-center">
+                    <div class="productSpecifications">
+
+                        <div class="row w-100 ms-0">
+                            <div class="col-lg-5 justify-content-center d-flex">
+                                <div class="proudctImg align-self-center ">
+                                    <img src="../imgs/Artboard-1-copy-1200x1200.png">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 p-0 ">
+                                <div class="specifications d-flex justify-content-center h-100">
+                                    <div class="align-self-center">
+                                        <div class="productName specification">
+                                            <h2>GTS 63 GAMING Desktop -AMD Ryzen 9 7950X - GeForce RTX™ 3060 12Gb GDDR6X</h2>
+                                        </div>
+                                        <div class="productBrand specification">
+                                            <h2>Brand : off-brand</h2>
+                                        </div>
+                                        <div class="productDescription specification ">
+                                            <h2>"Cooling System Model : DEEPCOOL LS720 High Performance ARGB 360mm CPU Liquid Cooler"</h2>
+                                        </div>
+                                        <div class="productStock specification ">
+                                            <h2>In stock</h2>
+                                        </div>
+                                        <div class="productPrice specification">
+                                            <h2>Price : 1,850.00</h2>
+                                        </div>
+                                        <div class="description d-grid">
+                                            <div class="d-flex">
+                                                <h2>Description</h2> <a id="dropdown-btn">
+                                                    <?xml version="1.0" ?>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white" width="30px"><g><path d="M0 0h24v24H0z" fill="none" /><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" /></g></svg>
+                                                </a>
+                                            </div>
+                                            <div class="description" id="dropdown-content">
+                                                <ul>
+                                                    <li> This is the content of the dropdown</li>
+                                                    <li> This is the content of the dropdown</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="productButtons d-flex ">
+                                            <a class="productButton" id="productLink" data-id="">Product link</a>
+                                            <a class="productButton" id="compareProduct" data-id="">Compare</a>
+                                            <a class="productButton" id="exitDialog" data-id="">Exit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="MainSection">
+
+        <div class="container-fluid ">
+            <div class="row m-4">
+                <div class="col-12">
+                    <div class="mainText"><h1>Select component</h1></div>
+                </div>
+                <div class="row d-flex justify-content-between" id="headerRow">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="AvalabileComponents"><span>Avalabile components : <span id="avalabileComponents">0</span> </span></div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <select class="filterSelect" id="filterSelect">
+                            <option>Filter</option>
+                            <option value="Price(High>Low)">Price(High>Low)</option>
+                            <option value="Price(Low>High)">Price(Low>High)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-stretch" id="componentRow" productsRow>
+                <div class="productCol col-lg-2 col-md-4 col-sm-12 m-3 " data-storename="GTS" data-price="1,229.00">  <div class="componentCard h-100 d-flex flex-column product" id="productCard" data-id="-NRBWQnIBEFHdeULnU22"><div class="componentImg"><img src="https://images.gts.jo/cache/catalog/products/laptops/MSI/2023/Katana-15-B13VFK-1-1200x1200.png " class="img-fluid "></div><h1 class="text-center">Laptop MSI Katana 15 B13VEK Core i7 13th Generation RTX 4050 6GB DDR6 15.6" 144Hz Black</h1><div class="prices d-flex justify-content-center"><span class="oldPrice" id="oldPrice"></span><span class="price">1,229.00JOD</span></div><div class="storeName"><span>GTS</span></div><div class="compareButton"><a class="compare" data-id="-NRBWQnIBEFHdeULnU22">Compare</a></div></div></div>
+                <div class="productCol col-lg-2 col-md-4 col-sm-12 m-3 " data-storename="GTS" data-price="1,229.00">  <div class="componentCard h-100 d-flex flex-column product"><div class="componentImg"><img src="https://images.gts.jo/cache/catalog/products/laptops/MSI/2023/Katana-15-B13VFK-1-1200x1200.png " class="img-fluid "></div><h1 class="text-center">Laptop MSI Katana 15 B13VEK Core i7 13th Generation RTX 4050 6GB DDR6 15.6" 144Hz Black</h1><div class="prices d-flex justify-content-center"><span class="oldPrice" id="oldPrice"></span><span class="price">1,229.00JOD</span></div><div class="storeName"><span>GTS</span></div><div class="compareButton"><a class="compare" data-id="-NRBWQnIBEFHdeULnU22">Compare</a></div></div></div>
+                <div class="productCol col-lg-2 col-md-4 col-sm-12 m-3 " data-storename="GTS" data-price="1,229.00">  <div class="componentCard h-100 d-flex flex-column product"><div class="componentImg"><img src="https://images.gts.jo/cache/catalog/products/laptops/MSI/2023/Katana-15-B13VFK-1-1200x1200.png " class="img-fluid "></div><h1 class="text-center">Laptop MSI Katana 15 B13VEK Core i7 13th Generation RTX 4050 6GB DDR6 15.6" 144Hz Black</h1><div class="prices d-flex justify-content-center"><span class="oldPrice" id="oldPrice"></span><span class="price">1,229.00JOD</span></div><div class="storeName"><span>GTS</span></div><div class="compareButton"><a class="compare" data-id="-NRBWQnIBEFHdeULnU22">Compare</a></div></div></div>
+                <div class="productCol col-lg-2 col-md-4 col-sm-12 m-3 " data-storename="GTS" data-price="1,229.00">  <div class="componentCard h-100 d-flex flex-column product"><div class="componentImg"><img src="https://images.gts.jo/cache/catalog/products/laptops/MSI/2023/Katana-15-B13VFK-1-1200x1200.png " class="img-fluid "></div><h1 class="text-center">Laptop MSI Katana 15 B13VEK Core i7 13th Generation RTX 4050 6GB DDR6 15.6" 144Hz Black</h1><div class="prices d-flex justify-content-center"><span class="oldPrice" id="oldPrice"></span><span class="price">1,229.00JOD</span></div><div class="storeName"><span>GTS</span></div><div class="compareButton"><a class="compare" data-id="-NRBWQnIBEFHdeULnU22">Compare</a></div></div></div>
+                <div class="productCol col-lg-2 col-md-4 col-sm-12 m-3 " data-storename="GTS" data-price="1,229.00">  <div class="componentCard h-100 d-flex flex-column product"><div class="componentImg"><img src="https://images.gts.jo/cache/catalog/products/laptops/MSI/2023/Katana-15-B13VFK-1-1200x1200.png " class="img-fluid "></div><h1 class="text-center">Laptop MSI Katana 15 B13VEK Core i7 13th Generation RTX 4050 6GB DDR6 15.6" 144Hz Black</h1><div class="prices d-flex justify-content-center"><span class="oldPrice" id="oldPrice"></span><span class="price">1,229.00JOD</span></div><div class="storeName"><span>GTS</span></div><div class="compareButton"><a class="compare" data-id="-NRBWQnIBEFHdeULnU22">Compare</a></div></div></div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./products.js"></script>
+</html>

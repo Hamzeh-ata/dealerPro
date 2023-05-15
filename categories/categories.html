@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <meta content="text/html"; charset="utf-8">
+        <link href="./categories.css" type="text/css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+          <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid">
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto  float-lg-end float-sm-start  float-md-start mb-2 mb-lg-0 ">
+                  <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                    <a class="nav-link" href="#">Stores</a>
+                  </li>
+                  <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                    <a class="nav-link" href="#">Build gaming computer</a>
+                  </li>
+                  <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                    <a class="nav-link" href="#">Build store</a>
+                  </li>
+                  <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start">
+                    <a class="nav-link" href="#">Sign in</a>
+                  </li>
+                  <li class="nav-item d-flex justify-content-lg-center justify-content-md-start justify-content-sm-start ">
+                    <a href="games.html" class="cmn-btn" style="padding: 1px 18px;">Sign up</a>
+                  </li>
+
+                 
+                </ul>
+              </div>
+              </div>
+            </div>
+          </nav>
+    <section class="MainSection">
+   <div class="container-fluid ">
+    <div class="row m-4">
+    <div class="col-12">
+      <div class="mainText"><h1>Select component</h1></div>
+    </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-stretch">
+      <div class="col-2 m-3 ">
+        <a class="componentCard h-100 d-flex flex-column" href="#" data-category="laptops" onclick="showProducts('laptops')">
+          <div class="componentImg">
+            <img src="./imgs/laptop.png " class="img-fluid " >
+          </div>
+          <h1 class="text-center">Gaming laptops</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column "  href="#" data-category="monitors" onclick="showProducts('monitors')">
+          <div class="componentImg">
+            <img src="./imgs/monitor.webp" class="img-fluid" >
+          </div>
+          <h1 class="text-center">Gaming monitors</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="computers"  onclick="showProducts('computers')">
+          <div class="componentImg">
+            <img src="./imgs/pc.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming computers</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " id="headset" data-category="headsets" onclick="showProducts('headset')">
+          <div class="componentImg">
+            <img src="./imgs/headSet.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming headsets</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="chairs" onclick="showProducts('chair')">
+          <div class="componentImg">
+            <img src="./imgs/chair.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming chairs</h1>
+        </a>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="mouses" onclick="showProducts('mouse')">
+          <div class="componentImg">
+            <img src="./imgs/mouse.png " class="img-fluid " >
+          </div>
+          <h1 class="text-center">Gaming mouses</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="keyboards" onclick="showProducts('keyboard')">
+          <div class="componentImg">
+            <img src="./imgs/keyboard.png" class="img-fluid" >
+          </div>
+          <h1 class="text-center">Gaming keyboards</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="motherboards" onclick="showProducts('motherboard')">
+          <div class="componentImg">
+            <img src="./imgs/morhterboard.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming motherboards</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="cpu" onclick="showProducts('cpu')">
+          <div class="componentImg">
+            <img src="./imgs/cpu.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming cpu</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="gpu" onclick="showProducts('gpu')">
+          <div class="componentImg">
+            <img src="./imgs/gpu.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming gpu</h1>
+        </a>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="psu" onclick="showProducts('powersupplies')">
+          <div class="componentImg">
+            <img src="./imgs/psu.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming psu</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="ram" onclick="showProducts('ram')">
+          <div class="componentImg">
+            <img src="./imgs/ram.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming ram</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column " href="#" data-category="hdd" onclick="showProducts('hdd')">
+          <div class="componentImg">
+            <img src="./imgs/hdd.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming hdd</h1>
+        </a>
+      </div>
+      <div class="col-2 m-3">
+        <a class="componentCard h-100 d-flex flex-column "href="#" data-category="ssd" onclick="showProducts('ssd')" >
+          <div class="componentImg">
+            <img src="./imgs/ssd.png" class="img-fluid">
+          </div>
+          <h1 class="text-center">Gaming ssd</h1>
+        </a>
+      </div>
+      <div class="w-100"></div>
+    </div>
+    
+   </div>
+    </section>
+    </body>
+    <script>
+        function showProducts(category) {
+            window.location.href = `products.html?category=${category}`;
+        }
+    </script>
+<script src="categories.js" ></script>
+</html>

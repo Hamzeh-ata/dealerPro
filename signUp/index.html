@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta content="text/html" ; charset="utf-8">
+    <link href="./Index.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section class="sectionOne">
+        <div class="container-fluid d-flex justify-content-center h-100 d-flex">
+            <div class="row align-self-center justify-content-center h-100  align-self-center w-100 pr-0 ">
+                <div class="col-lg-8 col-md-10 col-sm-12 align-self-center signUpCol pr-0">
+                    <div class="row pr-0">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mt-2">
+                            <div class="leftSide h-100 d-flex justify-content-center w-100">
+                                <div class="signUpForm align-self-center d-grid w-100">
+                                    <h1>Create account</h1>
+                                    <h2>Welcome to dealerPro world.</h2>
+                                    <a class="loginGoogle">Sign up using google</a>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <span class="bar align-self-center"></span>
+                                        <span class="orText align-self-center">Or create account</span>
+                                        <span class="bar align-self-center"></span>
+                                    </div>
+                                    <input class="emailInput" id="email" placeholder="Email" />
+                                    <input class="userName" id="userName" placeholder="userName" />
+                                    <input class="passInput" id="password" placeholder="password" />
+                                    <a class="signUp" id="signUp">Sign up</a>
+                                    <span class="haveAccount text-center">have an account ? <a>Sign in</a></span>
+                                    <span class='emailExists error'>The user with the provided email already exists</span>
+                                    <span class='invaildEmail error'>Invalid email address</span>
+                                    <span class='passwordCount error'>Password must be at least 6 characters long</span>
+                                    <span class='HasNumberAndLetter error'>Password contains both numbers and letters</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 pr-0 mb-1 imgCol">
+                            <div class="rightSide d-flex justify-content-center">
+                                <img src="imgs/loginImg.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>

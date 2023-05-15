@@ -1,0 +1,197 @@
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+body , html{
+    min-height: 100vh;
+
+}
+@media (max-width: 991px){
+.navbar   {
+  background-color: #2450c4;
+ width: 100%;
+}
+}
+body{
+    background: url(./imgs/Index.png) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+.sectionOne{
+    padding: 110px;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar-light{
+   
+    z-index: 0;
+}
+.navbar-nav{
+    float: right;
+ 
+}
+.nav-item a {
+    color: white !important;
+}
+.mainImg{
+    width: 100%;
+}
+
+
+.mainText h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+}
+.mainText p{
+    color: #8B8B8B;
+    font-size: 25px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.sectionTwoText h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+}
+.mainImg img{
+    width: 70%;
+}
+
+.getStarted {
+    display: none ;
+}
+.cmn-btn::after {
+    position: absolute;
+    content: "";
+    width: 108%;
+    height: 120%;
+    border: 1px solid #704add;
+    padding: 5px;
+    border-radius: 30px;
+}
+    .cmn-btn {
+        background-color: #2d186d;
+        border-radius: 25px;
+        font-weight: 600;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        transition: 0.3s all;
+      }
+      .getStarted a{
+        color: white;
+    
+      }
+        .getStarted a:hover {
+            color: #bbb7b7;
+        }
+      a{
+        text-decoration:none !important;
+      }
+
+  .nav-item a {
+    align-self: center;
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .navbar-light .navbar-toggler {
+   background-color: rgb(36, 80, 196);
+  }
+  .Bar{
+    border: 1px solid white;
+    width: 80%;
+    display: block;
+    margin : 20px 0px;
+  }
+  .categorieCard{
+    background: #24125C;
+border-radius: 11px;
+padding: 10px;
+place-content: center;
+place-items: center;
+cursor: pointer;
+height: 100%;
+ /* Show horizontal scrollbar */
+font-family: 'Barlow Condensed', sans-serif;
+  }
+  .categorieCard h2{
+ color: white;
+ font-size: 15px;
+text-align: center;
+margin-top: 5px;
+  }
+
+.scrollAbleDiv {
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    padding-bottom: 10px;
+    scrollbar-color: #24125c transparent;
+    cursor: pointer;
+}
+  @media (min-width: 992px) and (max-width: 1550px) {
+    .sectionOne {
+      padding: 80px;
+    }
+  }
+  
+  /* For large screens (e.g. desktops) */
+  @media (min-width: 1550px) {
+    .sectionOne {
+      padding: 140px;
+    }
+  }
+  
+  /* For phones (e.g. screens below 992px) */
+  @media (max-width: 991px) {
+    .sectionOne {
+      padding: 80px;
+    }
+  }
+.scrollAbleDiv::-webkit-scrollbar {
+    background-color: #24125c;
+    width: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+  
+}
+
+.scrollAbleDiv::-webkit-scrollbar-track {
+    background-color: #24125c;
+    width: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    
+}
+
+/* Set the color and style of the scrollbar thumb */
+.scrollAbleDiv::-webkit-scrollbar-thumb {
+    background-color: #311b75;
+    border-radius: 5px;
+    border: 1px solid #333;
+    
+}
+  @media (min-width: 992px){
+    .mainImg img{
+    width: 80%;
+    }
+  }
+  @media (min-width: 768px){
+  .mainImg img{
+    width: 85%;
+    }
+  }
+  @media (min-width: 576px){
+  .mainImg img{
+    width: 70%;
+    }
+  }
+  
